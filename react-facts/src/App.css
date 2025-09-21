@@ -1,0 +1,51 @@
+
+body {
+    background-color: #222222;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Container for the content */
+  .main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styling for the h2 heading */
+  .main-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 10px;
+    display: inline;
+  }
+  
+  /* Styling for the image */
+  .main-container img {
+    width: 45px;
+    margin-bottom: 0;
+    will-change: filter;
+    transition: filter 300ms;
+    /* margin-bottom: 20px; */
+  }
+  
+  /* Styling for the list */
+  .main-container ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.5;
+  }
+  
+  /* Styling for list items with a custom bullet */
+  .main-container li::before {
+    content: "⚡"; 
+    display: inline-block;
+    width: 1em; /* Space between bullet and text */
+    margin-left: -1em; /* To align with text */
+  }
+  
+  /* Add some extra space to the list items */
+  .main-container li {
+    margin-bottom: 15px;
+  }

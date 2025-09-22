@@ -5,12 +5,44 @@ body {
     font-family: Inter, sans-serif;
     padding: 20px;
   }
-  
+
+  header {
+    max-width: 600px;
+    margin: 0px auto;
+  }
   /* Container for the content */
   .main-container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  nav{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  ul{
+    padding: 5px;
+  }
+  
+  nav li{
+    display: inline;
+    font-style: italic;
+  }
+  
+  nav li::before{
+    content: " | "
+  }
+
+  nav a {
+    color: #00d1f7;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+
+  nav a:hover{
+    color: #fff;
   }
   
   /* Styling for the h2 heading */
@@ -51,7 +83,7 @@ body {
   }
 
   footer{
-    position: fixed;
-    bottom: 0;
-    left: 50%;
+   position: fixed;
+   bottom: 0;
+   left: 30%;
   }

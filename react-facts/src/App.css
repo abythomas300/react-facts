@@ -8,6 +8,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-style: normal;
 }
 
 /* Header and navigation styling */

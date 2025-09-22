@@ -1,5 +1,5 @@
-import reactLogo from "./assets/react-logo-dark.png"
-import "./App.css"
+import reactLogo from "../assets/react-logo-dark.png"
+import "../App.css"
 
 function Header() {
     return(

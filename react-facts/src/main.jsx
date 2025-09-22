@@ -1,13 +1,16 @@
 import {createRoot} from "react-dom/client"
-import App from "./App"
+import Header from "./Header"
+import Content from "./Content"
+import Footer from "./Footer"
 
 const root = createRoot(document.querySelector("#rootDiv"))
 
 console.log(<h2>Hi there!!</h2>)
 
 root.render(
-  <>
-    <App />
-    <footer>©️ All rights reserved</footer>
-  </>
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
 )

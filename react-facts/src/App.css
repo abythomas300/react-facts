@@ -14,7 +14,7 @@ body {
   }
   
   /* Styling for the h2 heading */
-  .main-container h2 {
+  h2 {
     font-size: 40px;
     font-weight: 700;
     margin: 0px 10px;
@@ -22,7 +22,7 @@ body {
   }
   
   /* Styling for the image */
-  .main-container img {
+  img {
     width: 45px;
     margin-bottom: 0;
     will-change: filter;
@@ -48,4 +48,10 @@ body {
   /* Add some extra space to the list items */
   .main-container li {
     margin-bottom: 15px;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
   }

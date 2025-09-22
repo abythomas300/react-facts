@@ -2,7 +2,7 @@
 
 function Content() {
   return(
-      <main className="main-container">
+      <main className="container">
         <ul>
           <li>Virtual DOM</li>
           <li>Components make UI reusable and easy to code</li>

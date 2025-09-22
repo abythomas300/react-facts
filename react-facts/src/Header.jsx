@@ -5,9 +5,11 @@ function Header() {
     return(
         <>
             <header>
-            <h2>Why</h2>
-            <img src={reactLogo} alt="react-logo-dark" className="logo"/>
-            <h2>is cool?</h2>
+                <div className="logo-and-title">
+                    <h2>Why</h2>
+                    <img src={reactLogo} alt="react-logo-dark" className="logo"/>
+                    <h2>is cool?</h2>
+                </div>
             </header>
 
             <nav>

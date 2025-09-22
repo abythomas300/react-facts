@@ -1,89 +1,133 @@
-
+/* Global styles for the app container */
 body {
-    background-color: #222222;
-    color: #fff;
-    font-family: Inter, sans-serif;
-    padding: 20px;
-  }
+  background-color: rgb(34, 34, 34);
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  header {
-    max-width: 600px;
-    margin: 0px auto;
-  }
-  /* Container for the content */
-  .main-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Header/Navigation styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
 
-  nav{
-    max-width: 600px;
-    margin: 0 auto;
-  }
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-  ul{
-    padding: 5px;
-  }
-  
-  nav li{
-    display: inline;
-    font-style: italic;
-  }
-  
-  nav li::before{
-    content: " | "
-  }
+.logo-and-title img {
+  width: 45px;
+  transition: transform 0.3s ease-in-out;
+}
 
-  nav a {
-    color: #00d1f7;
-    text-decoration: none;
-    margin: 0px 10px;
-  }
+.logo-and-title img:hover {
+  transform: rotate(360deg);
+}
 
-  nav a:hover{
-    color: #fff;
-  }
-  
-  /* Styling for the h2 heading */
-  h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0px 10px;
-    display: inline;
-  }
-  
-  /* Styling for the image */
-  img {
-    width: 45px;
-    margin-bottom: 0;
-    will-change: filter;
-    transition: filter 300ms;
-    /* margin-bottom: 20px; */
-  }
-  
-  /* Styling for the list */
-  .main-container ul {
-    list-style: none;
-    padding-left: 0;
-    line-height: 1.5;
-  }
-  
-  /* Styling for list items with a custom bullet */
-  .main-container li::before {
-    content: "⚡"; 
-    display: inline-block;
-    width: 1em; /* Space between bullet and text */
-    margin-left: -1em; /* To align with text */
-  }
-  
-  /* Add some extra space to the list items */
-  .main-container li {
-    margin-bottom: 15px;
-  }
+.logo-and-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #61DAFB; /* React's brand color for the title */
+}
 
-  footer{
-   position: fixed;
-   bottom: 0;
-   left: 30%;
+nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #61DAFB;
+}
+
+/* Main content styling */
+.container {
+  max-width: 800px;
+  width: 90%;
+  padding: 40px;
+  background-color: #242424;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* List item styling */
+.container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.container li {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.container li::before {
+  content: "⚡";
+  position: absolute;
+  left: 0;
+  color: #61DAFB;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 50px;
+}
+
+/* Add a cool animation for the facts list */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container li {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.container li:nth-child(1) { animation-delay: 0.1s; }
+.container li:nth-child(2) { animation-delay: 0.2s; }
+.container li:nth-child(3) { animation-delay: 0.3s; }
+.container li:nth-child(4) { animation-delay: 0.4s; }
+.container li:nth-child(5) { animation-delay: 0.5s; }

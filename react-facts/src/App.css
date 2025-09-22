@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
   font-family: "Zalando Sans Expanded", sans-serif;
   font-style: normal;
+  background-image: url("./assets/react-logo-half.png");
+  background-repeat:no-repeat;
+  background-position: right center;
+  background-size: contain;
 }
 
 /* Header and navigation styling */
